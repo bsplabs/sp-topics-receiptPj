@@ -152,23 +152,19 @@
           </div>
           <div class="blank"></div>
 
-          <h4>Our satisfied clients</h4>
+          <h4>Presented By</h4>
           <ul class="clients">
             <li>
               <a href="#">
-									<img src="assets/img/dummies/clients/client1.png" class="client-logo" alt="" />
+									<img src="assets/img/dummies/clients/NU.png" class="client-logo" alt="" />
 								</a>
             </li>
             <li>
               <a href="#">
-									<img src="assets/img/dummies/clients/client2.png" class="client-logo" alt="" />
+									<img src="assets/img/dummies/clients/EN.png" class="client-logo" alt="" />
 								</a>
             </li>
-            <li>
-              <a href="#">
-									<img src="assets/img/dummies/clients/client3.png" class="client-logo" alt="" />
-								</a>
-            </li>
+            
 
           </ul>
 
