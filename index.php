@@ -120,9 +120,9 @@
               <li>
                 <div class="testimonial_item">
                   <p>
-                    Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                    ไม่ต้องใช้สมองเลย ถ้าพูดแต่ 'ความจริง'
                   </p>
-                  <span class="author">Johny doe</span>
+                  <span class="author">ภาณุพงษ์ จันราช</span>
                   <span class="occupation">Graphic and HTML Web Designer</span>
                   <!-- end testmonial -->
                 </div>
@@ -130,9 +130,9 @@
               <li>
                 <div class="testimonial_item">
                   <p>
-                    Aenean commodo ligula eget dolor. Aenean massa.
+                    From Nikhom Kham Soi, Mukdahan, Thailand
                   </p>
-                  <span class="author">John Doe</span>
+                  <span class="author">สิทธิกร ประสันลักษ</span>
                   <span class="occupation">CEO Engineer</span>
                   <!-- end testmonial -->
                 </div>
@@ -140,9 +140,9 @@
               <li>
                 <div class="testimonial_item">
                   <p>
-                    libero quam euismod quam, sed sodales purus nisl eget felis. Pellentesque elit massa, cursus id.
+                    ดูแลตัวเอง ฟิตหุ่น อ่านหนังสือ และเลิกสนใจคนหรือความสัมพันธ์ห่วยๆ
                   </p>
-                  <span class="author">Roro Still</span>
+                  <span class="author">สิทธิชัย สามกองงาม</span>
                   <span class="occupation">New In Field</span>
                   <!-- end testmonial -->
                 </div>
@@ -175,45 +175,39 @@
         </div>
 
         <div class="span6">
-          <h4>Our services</h4>
+          <h4>จัดทำโดย</h4>
           <!-- start: Accordion -->
           <div class="accordion" id="accordion2">
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-								<i class="icon-caret-down"></i> Social media optimization </a>
+								<i class="icon-caret-down"></i> 57364204 นายภาณุพงษ์ จันราช</a>
               </div>
               <div id="collapseOne" class="accordion-body collapse in">
                 <div class="accordion-inner">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                  on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                Facebook: www.facebook.com/panupcng.janrat
                 </div>
               </div>
             </div>
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-								<i class="icon-caret-right"></i> Web design and development </a>
+								<i class="icon-caret-right"></i> 57364396 นายสิทธิกร ประสันลักษ์</a>
               </div>
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                  on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  Facebook: www.facebook.com/sittikorn.prasanlak
                 </div>
               </div>
             </div>
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-								<i class="icon-caret-right"></i> Business strategy and management </a>
+								<i class="icon-caret-right"></i> 57364402 นายสิทธิชัย สามกองงาม</a>
               </div>
               <div id="collapseThree" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                  on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  Facebook: www.facebook.com/JammieSTC
                 </div>
               </div>
             </div>
