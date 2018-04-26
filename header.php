@@ -81,10 +81,9 @@
                       <li class="dropdown">
                         <a href="#">อัพโหลดเอกสาร</a>
                         <ul class="dropdown-menu">
-                          <li><a href="about.html">About us</a></li>
-                          <li><a href="pricingtable.html">Pricing table</a></li>
-                          <li><a href="fullwidth.html">Fullwidth</a></li>
-                          <li><a href="404.html">404</a></li>
+                          <li><a href="about.html">ใบสำคัญรับเงิน</a></li>
+                          <li><a href="pricingtable.html">หนังสือรับเงิน</a></li>
+                          <li><a href="fullwidth.html">บันทึกข้อความ</a></li>
                         </ul>
                       </li>
                       <!-- <li class="dropdown">
