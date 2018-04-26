@@ -22,6 +22,16 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="span12">
+          <h3></h3>
+          <div class="row">
+            <p id="msg"></p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 <!-- ######################  -->
@@ -33,20 +43,20 @@
       var nameProject = document.getElementById('nameProject').value;
       var amount = document.getElementById('amount').value;
       var nameOwn = document.getElementById('nameOwn').value;
+      var data = 'name='+nameProject;
       var dataString = {
         "nameProject": nameProject,
         "amount": amount,
         "nameOwn": nameOwn
       };
-
       $.ajax({
-        type:"post",
+        type:"POST",
         url:"showdata.php",
         data: dataString,
         cache: false,
-        success: function(result){
-          alert("Success");
-          window.location = "showdata.php";
+        success: function(html){
+          alert(html);
+          $('#msg').html(html);
         }
       });
   });
