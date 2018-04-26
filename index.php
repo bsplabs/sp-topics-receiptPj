@@ -9,7 +9,7 @@
           </p>
           <ul class="list list-ok strong bigger">
             <li>สะดวกต่อการกรอกเอกสาร</li>
-            <li>เอกสารมีข้อมูลครบถ้วน สวยงาม ทันสมัย</li>
+            <li>เอกสารถูกแบบ ถูกเนื้อหา ถูกหลักภาษา ถูกความนิยม</li>
             <li>ประหยัดทรัพยากร</li>
           </ul>
 
@@ -53,9 +53,9 @@
             <div class="features_content">
               <h3>ใบสำคัญรับเงิน</h3>
               <p class="left">
-                Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                เป็นเอกสารทีใช้เป็นหลักฐานในการลงบัญชีให้ถูกต้อง สามารถตรวจสอบกระบวนการทำงานและบุคคลที่เกี่ยวข้องย้อนกลับได้ การจัดทำใบสำคัญบัญชีช่วยส่งเสริมระบบการควบคุมภายในของกิจการ ใช้เป็นหลักฐานยืนยันภายในองค์กร และกับบุคคลภายนอก
               </p>
-              <a href="#" class="btn btn-color btn-rounded"><i class="icon-angle-right"></i> Read more</a>
+              <a href="#" class="btn btn-color btn-rounded"><i class="icon-angle-right"></i>กรอกแบบฟอร์ม</a>
             </div>
           </div>
         </div>
@@ -67,9 +67,9 @@
             <div class="features_content">
               <h3>หนังสือราชการ</h3>
               <p class="left">
-                Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                เอกสารที่เป็นหลักฐานในทางราชการ เช่น หนังสือที่มีไปมาระหว่างส่วนราชการหนังสือที่ส่วนราชการมีไปถึงหน่วยงานอื่นซึ่งไม่ใช่ส่วนราชการ หนังสือที่หน่วยงานอื่นซึ่งไม่ใช่ส่วนราชการมีไปถึงส่วนราชการ เป็นต้น.
               </p>
-              <a href="#" class="btn btn-color btn-rounded"><i class="icon-angle-right"></i> Read more</a>
+              <a href="#" class="btn btn-color btn-rounded"><i class="icon-angle-right"></i>กรอกแบบฟอร์ม</a>
             </div>
           </div>
         </div>
@@ -81,9 +81,9 @@
             <div class="features_content">
               <h3>บันทึกข้อความ</h3>
               <p class="left">
-                Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                 เพื่ออำนวยความสะดวกในการติดต่อประสานงาน และสั่งงานภายในของส่วนราชการ
               </p>
-              <a href="#" class="btn btn-color btn-rounded"><i class="icon-angle-right"></i> Read more</a>
+              <a href="#" class="btn btn-color btn-rounded"><i class="icon-angle-right"></i>กรอกแบบฟอร์ม</a>
             </div>
           </div>
         </div>
