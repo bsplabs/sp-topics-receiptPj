@@ -131,3 +131,7 @@
   border-top-right-radius: 0;
   font-size: 18px;
 }
+
+a:hover {
+  color: red;
+}

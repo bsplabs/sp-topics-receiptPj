@@ -35,6 +35,11 @@ class Login extends Manager
         $vars['alldata'] = $data;
         return $this->view->render($response, 'home.phtml',$vars);
       }
+      else
+      {
+        $vars['alert'] = true;
+        return $this->view->render($response, 'login.phtml',$vars);
+      }
 
 
     //var_dump($data);

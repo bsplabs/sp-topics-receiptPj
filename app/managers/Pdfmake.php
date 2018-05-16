@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Managers;
+
 class Pdfmake extends Manager
 {
   public function index($req, $res)
@@ -7,11 +9,13 @@ class Pdfmake extends Manager
     return $this->view->render($res, 'pdfmake.phtml');
   }
 
-  public function getPdf($req, $res) {
+  public function getPdf($req, $res)
+  {
     return $this->view->render($res, 'pdfmake.phtml');
   }
 
-  public function postPdf($req, $res) {
+  public function postPdf($req, $res)
+  {
 
 
   }
