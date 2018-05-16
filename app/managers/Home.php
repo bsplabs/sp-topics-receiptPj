@@ -7,7 +7,15 @@ class Home extends Manager{
   }
 
   public function getHomepage($req, $res) {
-    return $this->view->render($res, 'home.phtml');
+
+    $sql = "SELECT * FROM file WHERE id=:id";
+    $result = $this->db->prepare($sql);
+    $result->bindParam("id", $_SESSION['user'],\PDO::PARAM_STR);
+    $result->execute();
+    $data = $result->fetchAll(\PDO::FETCH_OBJ);
+    $vars['alldata'] = $data;
+    $vars['type'] = "badge badge-warning";
+    return $this->view->render($res, 'home.phtml',$vars);
   }
 
   public function finddataByName($request, $response) {

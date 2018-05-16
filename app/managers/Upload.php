@@ -11,8 +11,9 @@ class Upload extends Manager
     return $this->view->render($res, 'upload.phtml');
   }
 
-  public function postUploadFile($req, $res) {
-    echo "Uploading...<br/>";
+  public function postUploadFile($req, $res)
+  {
+    $obj = $req->getParsedBody();
 
     if(is_uploaded_file($_FILES['upload_file']['tmp_name']))
     {
@@ -48,27 +49,37 @@ class Upload extends Manager
     	}
     	else
       {
-    		@mkdir("images"); //ถ้ายังไม่มีไดเร็กทอรี ให้สร้างขึ้นใหม่
+    		@mkdir("file2upload/".$_SESSION['user']); //ถ้ายังไม่มีไดเร็กทอรี ให้สร้างขึ้นใหม่
 
-    		$target = "images/".$_FILES['upload_file']['name'];
-    		if(!file_exists($target))
+    		$target = "file2upload/".$_SESSION['user']."/".$_FILES['upload_file']['name'];
+        $newname = $_FILES['upload_file']['name'];
+
+    		if(file_exists($target))
         {
-    			move_uploaded_file($_FILES['upload_file']['tmp_name'], $target);
-    		}
-     		else
-        {
-  				$oldname = pathinfo($_FILES['upload_file']['name'], PATHINFO_FILENAME);
-  				$ext =  pathinfo($_FILES['upload_file']['name'], PATHINFO_EXTENSION);
+          $oldname = pathinfo($_FILES['upload_file']['name'], PATHINFO_FILENAME);
+          $ext =  pathinfo($_FILES['upload_file']['name'], PATHINFO_EXTENSION);
+          $newname = $oldname;
   				do {
   					$r = rand();
   					$newname = $oldname."_".$r.".$ext";
-  					$target = "images/$newname";
+  					$target = "file2upload/".$_SESSION['user']."/".$newname;
   					if(!file_exists($target)) {
   						move_uploaded_file($_FILES['upload_file']['tmp_name'], $target);
   					}
   				} while(file_exists($target));
     		}
-    		echo "<h3>จัดเก็บไฟล์เรียบร้อยแล้ว</h3>";
+        move_uploaded_file($_FILES['upload_file']['tmp_name'], $target);
+
+        $sql = "INSERT INTO file VALUES (0,:file_name,:file_path,:name_doc,:describ,:id)";
+        $result = $this->db->prepare($sql);
+        $result->bindParam("file_name", $newname,\PDO::PARAM_STR);
+        $result->bindParam("file_path", $target,\PDO::PARAM_STR);
+        $result->bindParam("name_doc", $obj['name_doc'],\PDO::PARAM_STR);
+        $result->bindParam("describ", $obj['describ'],\PDO::PARAM_STR);
+        $result->bindParam("id", $_SESSION['user'],\PDO::PARAM_STR);
+        $result->execute();
+        $msg['success'] = "จัดเก็บไฟล์เรียบร้อยแล้ว";
+        return $this->view->render($res, 'upload.phtml',$msg);
     	}
     }
     else // ถ้าไม่ได้อัพไฟล์มา
