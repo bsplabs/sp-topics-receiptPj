@@ -12,16 +12,21 @@
 }
 </style>
 </head>
+<body>
 
 <?php
 // define variables and set to empty values
-$name = $topic = $inform = $postscript = $comment = $date = $tel = $at = $agency = $agency_ = "";
+$name = $agency = $road = $payor = $comment = $date = $at = $topic = $position = $inform = "";
 
 ?>
 
-<h2><center>หนังสือราชการ<h4><span style="color:gray">(หนังสือภายนอก)</span></h4></center></h2>
+<h2><center>บันทึกข้อความ</center></h2>
 <div id="example1">
+<p><span class="error">กรุณากรอกข้อมูลให้ครบถ้วน</span></p>
+
+
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    ส่วนราชการ: <input type="text" name="agency" value="<?php echo $agency;?>"><br><br>
     ที่: <input type="text" name="at" value="<?php echo $at;?>"><br><br>
     <form>
       <div>
@@ -29,29 +34,26 @@ $name = $topic = $inform = $postscript = $comment = $date = $tel = $at = $agency
         <input type="date" id="date" name="date" value="<?php echo $date;?>"><br><br>
       </div>
     </form>
-    ส่วนราชการเจ้าของหนังสือ: <input type="text" name="agency" value="<?php echo $agency;?>"><br><br>
     เรื่อง: <input type="text" name="topic" value="<?php echo $topic;?>"><br><br>
     เรียน: <input type="text" name="inform" value="<?php echo $inform;?>"><br><br>
     ข้อความ: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea><br><br>
-    คำลงท้าย: <input type="text" name="postscript" value="<?php echo $postscript;?>"><br><br>
     ชื่อ: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
-    ส่วนราชการเจ้าของเรื่อง: <input type="text" name="agency_" value="<?php echo $agency_;?>"><br><br>
-    เบอร์โทร: <input type="text" name="tel" value="<?php echo $tel;?>"><br><br>
-      <input type="submit" name="submit" value="Submit">
+    ตำแหน่ง: <input type="text" name="position" value="<?php echo $position;?>"><br><br>
+    <input type="submit" name="submit" value="Submit">
   </form>
 </div>
 <br>
 <div id="example1">
   <center>
     <?php
-    echo "<h3>แบบฟอร์มหนังสือภายนอก</h3>";
+    echo "<h3>แบบฟอร์มบันทึกข้อความ</h3>";
     ?>
-  <img src="./img/021.jpg" width="700" height="650">
+  <img src="./img/03.jpg" width="600" height="700">
 </center>
 </div>
 <br>
+
+
 </body>
 </html>
-
-
 <?php include "footer.php"; ?>
