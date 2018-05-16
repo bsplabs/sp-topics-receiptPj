@@ -37,15 +37,20 @@ $name = $address = $road = $comment = $website = $date = "";
   </div>
 </form>
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-  ชื่อ: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
-  บ้านเลขที่: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
-  ถนน: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
-  <br><br>
-  <input type="submit" name="submit" value="Submit">
-</form>
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    ชื่อ: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
+    บ้านเลขที่: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
+    ถนน: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
+  </form>
 </div>
-
+<br>
+<div id="example1">
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    ชื่อผู้รับเงิน: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
+    ชื่อผู้จ่ายเงิน: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</div>
 <?php
 echo "<h2>Your Input:</h2>";
 echo $date;
