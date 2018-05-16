@@ -38,6 +38,7 @@ $name = $address = $road = $payor = $comment = $date = $tel = "";
     </form>
     ส่วนราชการเจ้าของหนังสือ: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
     เรื่อง: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
+    เรียน: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
     ข้อความ: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea><br><br>
     คำลงท้าย: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
     ชื่อ: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
