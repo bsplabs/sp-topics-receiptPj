@@ -1,5 +1,5 @@
-<?php include "header.php"; ?>
-
+<?php include "./views/header.phtml"; ?>
+<div class="container" style="width: 800px; padding-top: 4%;">
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -22,6 +22,7 @@ $name = $topic = $inform = $postscript = $comment = $date = $tel = $at = $agency
 <h2><center>หนังสือราชการ<h4><span style="color:gray">(หนังสือภายนอก)</span></h4></center></h2>
 <div id="example1">
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ที่: <input type="text" name="at" value="<?php echo $at;?>"><br><br>
     <form>
       <div>
@@ -30,14 +31,20 @@ $name = $topic = $inform = $postscript = $comment = $date = $tel = $at = $agency
       </div>
     </form>
     ส่วนราชการเจ้าของหนังสือ: <input type="text" name="agency" value="<?php echo $agency;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     เรื่อง: <input type="text" name="topic" value="<?php echo $topic;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     เรียน: <input type="text" name="inform" value="<?php echo $inform;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ข้อความ: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     คำลงท้าย: <input type="text" name="postscript" value="<?php echo $postscript;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ชื่อ: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
     ส่วนราชการเจ้าของเรื่อง: <input type="text" name="agency_" value="<?php echo $agency_;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     เบอร์โทร: <input type="text" name="tel" value="<?php echo $tel;?>"><br><br>
-      <input type="submit" name="submit" value="Submit">
+      <center><input type="submit" name="submit" value="Submit"></center>
   </form>
 </div>
 <br>
@@ -46,12 +53,10 @@ $name = $topic = $inform = $postscript = $comment = $date = $tel = $at = $agency
     <?php
     echo "<h3>แบบฟอร์มหนังสือภายนอก</h3>";
     ?>
-  <img src="./img/021.jpg" width="700" height="650">
+  <img src="./img/021.jpg" width="650" height="650">
 </center>
 </div>
 <br>
 </body>
 </html>
-
-
-<?php include "footer.php"; ?>
+</div>
