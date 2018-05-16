@@ -23,7 +23,7 @@
 
 <?php
 // define variables and set to empty values
-$name = $address = $road = $comment = $website = $date = "";
+$name = $address = $road = $payor = $website = $date = "";
 
 ?>
 
@@ -47,7 +47,7 @@ $name = $address = $road = $comment = $website = $date = "";
 <div id="example1">
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     ชื่อผู้รับเงิน: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
-    ชื่อผู้จ่ายเงิน: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
+    ชื่อผู้จ่ายเงิน: <input type="text" name="payor" value="<?php echo $payor;?>"><br><br>
     <input type="submit" name="submit" value="Submit">
   </form>
 </div>
