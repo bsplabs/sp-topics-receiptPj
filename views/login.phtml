@@ -1,6 +1,8 @@
 
 <?php include "./views/header.phtml"; ?>
 
+<?php if($alert) { echo '<div class="alert alert-danger" style="font-family: \'Itim\', cursive; font-size:17px; padding-left:5%;" role="alert">เข้าสู่ระบบผิดพลาด กรุณาลองใหม่อีกครั้ง</div>'; } ?>
+
 <form class="form-signin" method="post" action="./login">
 
   <h1 class="h3 mb-3 font-weight-normal">เข้าสู่ระบบ</h1>

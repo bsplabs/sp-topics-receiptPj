@@ -89,22 +89,20 @@
         <table class="table m-0">
           <thead style="font-size:18px;">
           <tr>
-            <th>หมายเลขรายการ</th>
-            <th>รายการ</th>
+            <th>ชื่อรายการ</th>
+            <th>ชื่อไฟล์</th>
             <th>รูปแบบ</th>
-            <th>จัดการ</th>
+            <th>รายละเอียด</th>
           </tr>
           </thead>
           <tbody>
           <?php
           foreach($alldata as $obj) { ?>
           <tr>
-            <td><?php echo $obj->file_id; ?></td>
-            <td><?php echo $obj->file_name; ?></td>
-            <td><span class="<?php echo $type; ?>">ไฟล์อัพโหลด</span></td>
-            <td>
-              <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-            </td>
+            <td><?php echo $obj->name_doc; ?></td>
+            <td><a href="./<?php echo $obj->file_path; ?>" onMouseOver="this.style.color='#0F0'" onMouseOut="this.style.color='#00F'" style="color:#00F;"><?php echo $obj->file_name; ?></a></td>
+            <td><span class="badge badge-warning">ไฟล์อัพโหลด</span></td>
+            <td><?php echo $obj->describ; ?></td>
           </tr>
           <?php
             }

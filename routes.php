@@ -11,7 +11,7 @@ if (!$_SESSION['user'])
 }
 else
 {
-	$app->get('/home', 'App\Managers\Home:getHomepage');
+	$app->get('/login', 'App\Managers\Home:getHomepage');
 }
 
 $app->post('/login', 'App\Managers\Login:postLogin');

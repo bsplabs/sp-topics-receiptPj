@@ -60,14 +60,12 @@ class Upload extends Manager
           $ext =  pathinfo($_FILES['upload_file']['name'], PATHINFO_EXTENSION);
           $newname = $oldname;
   				do {
-  					$r = rand();
+  					$r = rand(1000,9999);
   					$newname = $oldname."_".$r.".$ext";
   					$target = "file2upload/".$_SESSION['user']."/".$newname;
-  					if(!file_exists($target)) {
-  						move_uploaded_file($_FILES['upload_file']['tmp_name'], $target);
-  					}
   				} while(file_exists($target));
     		}
+
         move_uploaded_file($_FILES['upload_file']['tmp_name'], $target);
 
         $sql = "INSERT INTO file VALUES (0,:file_name,:file_path,:name_doc,:describ,:id)";
