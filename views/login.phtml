@@ -1,0 +1,19 @@
+
+<?php include "./views/header.phtml"; ?>
+
+<form class="form-signin" method="post" action="./login">
+
+  <h1 class="h3 mb-3 font-weight-normal">เข้าสู่ระบบ</h1>
+  <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้" required autofocus>
+  <input type="password" name="password" class="form-control" placeholder="รหัสผ่าน" required>
+  <br>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> จำฉันใว้ในระบบ
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">เข้าสู่ระบบ</button>
+  </form>
+  <img class="mb-4" src="" alt="">
+
+<?php include "./views/footer.phtml"; ?>

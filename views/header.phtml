@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>หน้าเเรก</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" href="./assets/plugins/font-awesome/css/font-awesome.min.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="./assets/css/adminlte.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+
+		<link rel="stylesheet" href="./assets/css/style.css">
+
+	</head>
+
+	<body>
+		<hr style="margin: 0; border-color:black;">
+		<nav class="navbar navbar-expand-lg">
+			<span class="navbar-brand" href="#">RECEIPT</span>
+			<img src="./assets/img/4.png" width="50" height="50">
+			<span class="navbar-brand" href="#">PDF</span>
+			<?php if(!isset($_SESSION['user'])) {
+			?>
+			<ul class="navbar-nav ml-auto">
+		    <li class="nav-item">
+					<a href="./login" type="button" class="btn btn-secondary">Log in</a>
+		    </li>
+		    <li class="nav-item">
+		      <a href="./register" type="button" class="btn btn-secondary">Sign in</a>
+		    </li>
+			</ul>
+			<?php
+			} else {
+			?>
+			<div class="navbar-nav ml-auto media">
+			  <div class="media-left" style="padding-right:10px; padding-top:1px;">
+			    <img src="./assets/img/avatar04.png" class="media-object rounded-circle" style="width:50px; height:50px;">
+			  </div>
+			  <div class="media-body" style="text-align: center;" >
+					<h4 class="media-heading" style="padding:0; margin:0;font-family: 'Itim', cursive; color:white;"><?php echo $_SESSION['name']; ?></h4>
+					<a href="./logout" style="padding:0; margin:0; font-family: 'Itim', cursive;">ออกจากระบบ</a>
+			  </div>
+			</div>
+			<?php
+			}
+			 ?>
+		</nav>
+		<hr style="margin: 0; border:1.5px solid black;">

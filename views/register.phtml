@@ -1,0 +1,35 @@
+<?php include "./views/header.phtml"; ?>
+<?php if (empty($insertBool)) { ?>
+<form class="form-signin" method="post" action="./register">
+  <h1 class="h3 mb-3 font-weight-normal">ลงทะเบียน</h1>
+  <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้" required autofocus>
+  <input type="text" name="fullname" class="form-control" placeholder="ชื่อที่ใช้เเสดง" required autofocus>
+  <input type="password" name="password" class="form-control" placeholder="รหัสผ่าน" required>
+  <br>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">ลงทะเบียน</button>
+</form>
+<img class="mb-4" src="" alt="">
+
+<?php }else { ?>
+
+  <div class="modal-dialog modal-lg" style="padding-top: 5%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">เเจ้งเตือน</h4>
+        </div>
+        <div class="modal-body">
+          <p style="font-size:18px;">คุณลงละเบียนสำเร็จ กรุณาคลิก >> <a href="./login" style="color:red;">เข้าสู่ระบบ</a></p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<?php
+  exit('</body></html>');
+  }
+
+?>
+
+<?php include "./views/footer.phtml"; ?>
