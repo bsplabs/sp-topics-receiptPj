@@ -46,7 +46,7 @@ $name = $topic = $inform = $postscript = $comment = $date = $tel = $at = $agency
     <?php
     echo "<h3>แบบฟอร์มหนังสือภายนอก</h3>";
     ?>
-  <img src="./img/02.jpg" width="750" height="700">
+  <img src="./img/021.jpg" width="700" height="650">
 </center>
 </div>
 <br>
