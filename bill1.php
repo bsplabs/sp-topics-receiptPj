@@ -22,14 +22,12 @@
 
 <?php
 // define variables and set to empty values
-$name = $address = $road = $payor = $website = $date = "";
+$name = $address = $road = $payor = $comment = $date = $tel = "";
 
 ?>
 
-<h2><center>หนังสือราชการ<หนังสือภายนอก></center></h2>
+<h2><center>หนังสือราชการ<h4><span style="color:gray">(หนังสือภายนอก)</span></h4></center></h2>
 <div id="example1">
-
-
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     ที่: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
     <form>
@@ -44,23 +42,22 @@ $name = $address = $road = $payor = $website = $date = "";
     คำลงท้าย: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
     ชื่อ: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
     ส่วนราชการเจ้าของเรื่อง: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
-    เบอร์โทร: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
+    เบอร์โทร: <input type="text" name="tel" value="<?php echo $tel;?>"><br><br>
       <input type="submit" name="submit" value="Submit">
   </form>
 </div>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $date;
-echo "<br>";
-echo $name;
-echo "<br>";
-?>
-
-
+<br>
+<div id="example1">
+  <center>
+    <?php
+    echo "<h3>แบบฟอร์มหนังสือภายนอก</h3>";
+    ?>
+  <img src="./img/02.jpg" width="750" height="700">
+</center>
+</div>
+<br>
 </body>
 </html>
-
 
 
 <?php include "footer.php"; ?>
