@@ -1,12 +1,28 @@
 <?php include "./views/header.phtml"; ?>
 
 
-<div class="container" style="width: 495px; padding-top: 4%;">
-
-  <div class="card-footer clearfix">
-    <a href="./pdfmake" class="btn btn-sm btn-info float-left">ใบสำคัญรับเงิน</a>
-    <a href="./upload" class="btn btn-sm btn-info float-center ">หนังสือราชการ</a>
-    <a href="./bill" class="btn btn-sm btn-info float-right">บันทึกข้อความ</a>
+<div class="container-fluid" style="padding: 3%; font-family: 'Itim', cursive; text-align:center;">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>ใบสำคัญรับเงิน</h3>
+      <div class="card" style="border: 2px solid black;">
+        <a href="./money">><img src="./assets/img/01.jpg" height="400px"></a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3>หนังสือราชการ</h3>
+      <div class="card" style="border: 2px solid black;">
+        <a href="pdfmake/">><img src="./assets/img/02.jpg" height="400px"></a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3>บันทึกข้อความ</h3>
+      <div class="card" style="border: 2px solid black;">
+        <a href="./memmsg">><img src="./assets/img/03.jpg" height="400px"></a>
+      </div>
+    </div>
   </div>
-
-</div>
+  <hr>
+  <div class="container">
+      <a href="./home" class="btn btn-sm btn-warning float-center">Home</a>
+  </div>

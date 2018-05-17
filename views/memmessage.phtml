@@ -1,0 +1,69 @@
+<?php
+require_once('./assets/ThaiPDF/thaipdf.php');
+ob_start();
+?>
+<html>
+<style>
+body {
+
+}
+.container {
+  width: 100%;
+  height: 700px;
+}
+.col-1>img {
+  position: relative;
+  left: 10%;
+}
+.row {
+  padding: 6%;
+  position: relative;
+}
+.row>span {
+  position: absolute;
+  left: 17%;
+  top: 1%;
+}
+h1
+{
+  display: inline;
+  margin-bottom: 10px;
+  font-family: 'TH Sarabun PSK';
+  position: relative;
+  top: -12px;
+  right: -37%;
+}
+p {
+}
+#html-css {
+  float: left; margin-right: 20px;
+}
+  </style>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <img style="position:relative; left: 15%; top: 30px;" src ="./assets/img/logomem.png" width="70px" >
+      <h1 style="position:relative; top: 5px">บันทึกข้อความ</h1>
+    </div>
+    <div class="col-2">
+      <p style="font-size:18px; position:relative; left: 30%; top: 5px">ส่วนราชการ <?php echo $memmsg['main_s']; ?></p>
+      <p style="font-size:18px; position:relative; left: 20%;">ที่ <?php echo $memmsg['number_o']; ?></p>
+      <p style="font-size:18px; position:relative; left: 20%; display:inline;">เรื่อง <?php echo $memmsg['name_sty']; ?></p>
+      <span style="font-size:18px; position:relative; left: 60%; margin-right:10px;">วันที่ <?php echo $memmsg['date2do']; ?></span>
+      <p style="font-size:18px; position:relative; left: 20%;"><?php echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$memmsg['f_msg']; ?></p>
+      <p style="font-size:18px; position:relative; left: 20%;"><?php echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$memmsg['l_msg']; ?></p>
+      <p style="font-size:18px; position:absolute; right:30%; bottom:-40px;">(<?php echo $memmsg['name_own'];?>)</p>
+      <p style="font-size:18px; position:absolute; right:25%; bottom:-70px;">ตำแหนง <?php echo $memmsg['pos']; ?></p>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<?php
+$html = ob_get_clean();
+pdf_html($html);
+pdf_echo();
+die();
+?>

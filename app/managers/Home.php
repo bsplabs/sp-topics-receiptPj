@@ -13,8 +13,8 @@ class Home extends Manager{
     $result->bindParam("id", $_SESSION['user'],\PDO::PARAM_STR);
     $result->execute();
     $data = $result->fetchAll(\PDO::FETCH_OBJ);
+    $vars['countUpload'] = $result->rowCount();
     $vars['alldata'] = $data;
-    $vars['type'] = "badge badge-warning";
     return $this->view->render($res, 'home.phtml',$vars);
   }
 
