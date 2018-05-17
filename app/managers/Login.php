@@ -22,7 +22,8 @@ class Login extends Manager
       $data = $result->fetch(\PDO::FETCH_OBJ);
 
       $count = $result->rowCount();
-
+      // echo $count;
+      // die();
       if($count > 0)
       {
         $_SESSION['user'] = $data->id;
@@ -32,6 +33,7 @@ class Login extends Manager
         $result->bindParam("id", $_SESSION['user'],\PDO::PARAM_STR);
         $result->execute();
         $data = $result->fetchAll(\PDO::FETCH_OBJ);
+        $vars['countUpload'] = $result->rowCount();
         $vars['alldata'] = $data;
         return $this->view->render($response, 'home.phtml',$vars);
       }
