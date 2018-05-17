@@ -1,6 +1,6 @@
 <?php
-require_once('./assets/ThaiPDF/thaipdf.php');
-ob_start();
+// require_once('./assets/ThaiPDF/thaipdf.php');
+// ob_start();
 ?>
 <html>
 <body>
@@ -26,9 +26,9 @@ ob_start();
 </body>
 </html>
 <?php
-$html = ob_get_clean();
-pdf_margin(15,15,20,20,12,12);
-pdf_html($html);
-pdf_echo();
+// $html = ob_get_clean();
+// pdf_margin(15,15,20,20,12,12);
+// pdf_html($html);
+// pdf_echo();
 die();
 ?>
