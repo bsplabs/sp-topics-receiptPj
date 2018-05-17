@@ -1,6 +1,6 @@
 <?php include "./views/header.phtml"; ?>
 
-
+<div class="container" style="width: 1100px; padding-top: 4%;">
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -11,7 +11,6 @@
     padding: 10px;
     border-radius: 25px;
 }
-
 </style>
 </head>
 <body>
@@ -21,7 +20,6 @@
 $name = $address = $road = $payor = $website = $date = "";
 
 ?>
-
 <h2><center>ใบสำคัญรับเงิน</center></h2>
 <div id="example1">
 <p><span class="error">กรุณากรอกข้อมูลให้ครบถ้วน</span></p>
@@ -33,17 +31,23 @@ $name = $address = $road = $payor = $website = $date = "";
 </form>
 
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ชื่อ: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     บ้านเลขที่: <input type="text" name="address" value="<?php echo $address;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ถนน: <input type="text" name="road" value="<?php echo $road;?>"><br><br>
-  </form>
-    <?php
-    echo "<h4>รายการ</h4>";
-    ?>
-  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    ที่ 1: รายการ <input type="text" name="list1" value="<?php echo $list1;?>">
+    จำนวน <input type="text" name="address" value="<?php echo $address;?>">
+    หน่วยละ <input type="text" name="address" value="<?php echo $address;?>">
+    จำนวนเงิน <input type="text" name="address" value="<?php echo $address;?>"><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ชื่อผู้รับเงิน: <input type="text" name="name" value="<?php echo $name;?>"><br><br>
+    &nbsp;&nbsp;&nbsp;
     ชื่อผู้จ่ายเงิน: <input type="text" name="payor" value="<?php echo $payor;?>"><br><br>
-    <input type="submit" name="submit" value="Submit">
+    <center><input type="submit" name="submit" value="Submit"></center>
   </form>
 </div>
 <br>
@@ -60,3 +64,4 @@ $name = $address = $road = $payor = $website = $date = "";
 
 </body>
 </html>
+</div>
