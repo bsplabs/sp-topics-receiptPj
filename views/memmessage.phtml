@@ -3,45 +3,9 @@ require_once('./assets/ThaiPDF/thaipdf.php');
 ob_start();
 ?>
 <html>
-<style>
-body {
-
-}
-.container {
-  width: 100%;
-  height: 700px;
-}
-.col-1>img {
-  position: relative;
-  left: 10%;
-}
-.row {
-  padding: 6%;
-  position: relative;
-}
-.row>span {
-  position: absolute;
-  left: 17%;
-  top: 1%;
-}
-h1
-{
-  display: inline;
-  margin-bottom: 10px;
-  font-family: 'TH Sarabun PSK';
-  position: relative;
-  top: -12px;
-  right: -37%;
-}
-p {
-}
-#html-css {
-  float: left; margin-right: 20px;
-}
-  </style>
 <body>
-<div class="container">
-  <div class="row">
+<div class="container" style="width: 100%;">
+  <div class="row" style="  padding: 6%; position: relative;">
     <div class="col-1">
       <img style="position:relative; left: 15%; top: 30px;" src ="./assets/img/logomem.png" width="70px" >
       <h1 style="position:relative; top: 5px">บันทึกข้อความ</h1>
@@ -63,6 +27,7 @@ p {
 </html>
 <?php
 $html = ob_get_clean();
+pdf_margin(15,15,20,20,12,12);
 pdf_html($html);
 pdf_echo();
 die();

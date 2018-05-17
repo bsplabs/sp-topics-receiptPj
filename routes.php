@@ -30,6 +30,10 @@ $app->get('/pdfmake', 'App\Managers\Pdfmake:getPdf');
 $app->post('/pdfmake', 'App\Managers\Pdfmake:postPdf');
 $app->get('/memmsg', 'App\Managers\Pdfmake:getMemmsgpage');
 
+
+$app->get('/bill', 'App\Managers\Bill:getBill');
+$app->get('/bill1', 'App\Managers\Bill1:getBill');
+$app->get('/bill2', 'App\Managers\Bill2:getBill');
 // $app->get('/hello/{say}', function($request, $response, $arg){
 // 	echo 'Hello World!!! ' . $arg['say'];
 // });
