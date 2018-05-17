@@ -1,0 +1,4 @@
+skew https://www.pyimagesearch.com/2017/02/20/text-skew-correction-opencv-python/
+se https://homepages.inf.ed.ac.uk/rbf/HIPR2/strctel.htm
+binarization => https://stackoverflow.com/questions/14513542/convert-image-to-black-white
+fillter http://what-when-how.com/embedded-image-processing-on-the-tms320c6000-dsp/image-enhancement-via-spatial-filtering-image-processing-part-2/
