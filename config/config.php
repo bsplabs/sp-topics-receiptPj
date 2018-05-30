@@ -4,9 +4,9 @@
 $config['displayErrorDetails'] = true;
 $config['addContentLengtHeader'] = true;
 
-$config['db']['host'] = 'localhost';
+$config['db']['host'] = '127.0.0.1';
 $config['db']['user'] = 'root';
-$config['db']['pass'] = '';
+$config['db']['pass'] = 'abc123';
 $config['db']['dbname'] = 'darkblog';
 
 
